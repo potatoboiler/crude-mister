@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe build active file",
+            "command": "C:\\Users\\gamer\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "-I",
+                "${MSMPI_INC}",
+                "$env:MSMPI_LIB64\\msmpi.lib",
+            ],
+            "options": {
+                "cwd": "${fileDirname}",
+                "shell": "pwsh"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "detail": "compiler: C:\\Users\\gamer\\mingw64\\bin\\g++.exe"
+        },
+    ],
+}
